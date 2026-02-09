@@ -75,7 +75,7 @@ const Result = () => {
   const downloadFile = async () => {
     const browser = getBrowser();
     var useragt = navigator.userAgent.toLowerCase();
-    const target_url = 'https://www.swordfor2024thsf.com/download?image='+type.typeDtlName+'.jpg';
+    const target_url = `${process.env.REACT_APP_TARGET_URL}/download?image=${type.typeDtlName}.jpg`;
 		if(useragt.match(/kakaotalk/i)){
         if(navigator.userAgent.match("KAKAOTALK") && browser == 'Safari'){
           window.location.href= target_url;
@@ -138,8 +138,8 @@ const Result = () => {
           {
             title: '테스트 하기',
             link: {
-              mobileWebUrl: 'https://www.swordfor2024thsf.com',
-              webUrl: 'https://www.swordfor2024thsf.com',
+              mobileWebUrl: process.env.REACT_APP_TARGET_URL,
+              webUrl: process.env.REACT_APP_TARGET_URL,
             },
           },
         ],
