@@ -151,11 +151,11 @@ const Result = () => {
     return (
         
       <div className="final-container">
-        {data?
+        {data && type?
         <>
         <div className='bible-section'>
           <img id="resultTop" className='img-fluid' src={require(`../images/type5.jpg`)} alt="resultTop"/>
-            <p className='bible'>{type.typePray}</p> 
+            <p className='bible'>{type.typePray}</p>
         </div>
      
         <div className="mbti-result">
