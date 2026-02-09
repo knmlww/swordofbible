@@ -1,8 +1,8 @@
 /* eslint-disable*/
 import React, { useEffect, useState } from 'react';
-import { useNavigate ,useLocation, useSearchParams,useParams } from 'react-router-dom';
-import {useSelector , useDispatch} from "react-redux";
-import {blobToBase64, getBrowser, b64toBlob} from '../common/Utils';
+import { useNavigate, useSearchParams, useParams } from 'react-router-dom';
+import {useDispatch} from "react-redux";
+import {getBrowser} from '../common/Utils';
 import axios from 'axios';
 import '../css/main.css';
 import '../css/default.css';
@@ -17,9 +17,7 @@ const Result = () => {
     const [data , setData] = useState(false);
     const [type, setType] = useState(null);
 
-    const [bibleUrl, setBibleUrl] = useState(null);
-    const [descUrl, setDescUrl] = useState(null);
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams] = useSearchParams();
 
     const { search } = useParams();
 
