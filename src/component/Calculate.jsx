@@ -88,14 +88,14 @@ const Calculate = (props) => {
     const url = '/holymbti/insertResult';
     const data = {
         'mbtiResult' : result,
-        'iresult' : i_result,
-        'eresult' : e_result,
-        'nresult' : n_result,
-        'sresult' : s_result,
-        'tresult' : t_result,
-        'fresult' : f_result,
-        'jresult' : j_result,
-        'presult' : p_result,
+        'iResult' : i_result,
+        'eResult' : e_result,
+        'nResult' : n_result,
+        'sResult' : s_result,
+        'tResult' : t_result,
+        'fResult' : f_result,
+        'jResult' : j_result,
+        'pResult' : p_result,
         'imgName' : generatedImage
     };
 
